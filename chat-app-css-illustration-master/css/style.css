@@ -1,0 +1,243 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Rubik", sans-serif;
+  background-color: hsl(270, 20%, 96%);
+}
+html {
+  font-size: 62.5%;
+}
+.flex {
+  display: flex;
+  gap: 0.5rem;
+  flex-direction: column;
+}
+/* ////////////////////////////////////
+ TYPOGRAPHY
+//////////////////////////////////// */
+h2 {
+  color: hsl(276, 100%, 88%);
+}
+h3 {
+  color: hsl(276, 100%, 76%);
+  font-size: 1.1rem;
+}
+h2,
+h3 {
+  margin: 0;
+}
+
+/* ////////////////////////////////////
+ NAVIGATION
+//////////////////////////////////// */
+.nav {
+  background-image: linear-gradient(
+    to right,
+    hsl(264, 100%, 61%),
+    hsl(293, 100%, 63%)
+  );
+  display: grid;
+  grid-template-columns: auto auto 1fr auto;
+  align-items: center;
+  border-radius: 0 0 7px 7px;
+
+  padding: 2.8rem 0.7rem 1rem;
+}
+.nav-text {
+  margin-left: 1.2rem;
+}
+.icon {
+  height: 20px;
+  width: 24px;
+  color: #fff;
+}
+.icon2 {
+  width: 13.2px;
+  color: rgba(255, 255, 255, 0.658);
+}
+.icon3 {
+  background-color: hsl(271, 36%, 24%);
+  height: 27px;
+  width: 28px;
+}
+.icon4 {
+  width: 18.5px;
+  color: rgba(255, 255, 255, 0.438);
+}
+.profile-pic {
+  width: 28px;
+  height: 28px;
+  border: 1.9px solid #fff;
+}
+.icon3,
+.profile-pic {
+  border-radius: 50%;
+}
+
+/* ////////////////////////////////////
+ MESSAGES
+//////////////////////////////////// */
+.messages {
+  padding: 1.2rem 0.9rem 0.9rem;
+  background-color: hsl(270, 20%, 96%);
+  display: grid;
+  grid-template-columns: auto;
+  row-gap: 2rem;
+}
+.msg {
+  padding: 0.6rem;
+  max-width: 15.4rem;
+}
+.msg-left {
+  background-color: hsla(276, 55%, 52%, 0.142);
+  color: hsl(276, 55%, 52%);
+}
+.bdr-left {
+  border-radius: 10px 10px 10px 4.8px;
+}
+.msg-right {
+  border-radius: 10px 10px 4.8px 10px;
+  color: hsl(271, 15%, 43%);
+  background-color: #fff;
+  box-shadow: 0 0.4rem 0.4rem rgb(0 0 0 / 6%);
+}
+.msg-small {
+  max-width: 9.7rem;
+  justify-self: flex-end;
+}
+.msg-price {
+  color: #fff;
+  background-image: linear-gradient(
+    to right,
+    hsl(293, 100%, 63%),
+    hsl(264, 100%, 61%)
+  );
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  max-width: 19.3rem;
+  column-gap: 0.8rem;
+}
+.end {
+  justify-self: end;
+  align-items: flex-end;
+}
+.price {
+  font-weight: 700;
+  font-size: 1.4rem;
+  padding-right: 1.1rem;
+}
+.gap {
+  gap: 0.9rem;
+}
+.dog-pic {
+  width: 45px;
+  height: 45px;
+  border-radius: 10px;
+}
+.dog-pics {
+  display: flex;
+}
+form {
+  background-color: #fff;
+  /* margin-top: 0.9rem; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 0.5rem 0.5rem 2.4rem;
+  border-radius: 35.4px;
+}
+input {
+  border: none;
+}
+::placeholder {
+  color: hsl(206, 6%, 79%);
+  font-size: 1.1rem;
+  opacity: 1;
+}
+
+/* ////////////////////////////////////
+ CONTAINERS
+//////////////////////////////////// */
+.phone {
+  max-width: 26.9rem;
+  background-image: linear-gradient(
+    to bottom,
+    hsl(293, 100%, 63%),
+    hsl(264, 100%, 61%)
+  );
+  border: 10px solid #fff;
+
+  margin: 2rem auto;
+  border-radius: 29px;
+  overflow: hidden;
+}
+.bb {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 44%;
+  height: 56rem;
+  border-bottom-right-radius: 50% 160px;
+  border-bottom-left-radius: 50% 160px;
+  background-color: hsl(264, 100%, 61%);
+  z-index: -9999;
+}
+
+/* ////////////////////////////////////
+ TEXT
+//////////////////////////////////// */
+.text {
+  padding: 3.6rem;
+  gap: 2.2rem;
+  justify-content: center;
+  /* align-items: center; */
+}
+h1,
+.paragraph {
+  text-align: center;
+}
+h1 {
+  color: hsl(271, 36%, 24%);
+  font-size: 3.6rem;
+  font-weight: 600;
+}
+.paragraph {
+  color: hsl(270, 7%, 64%);
+  font-size: 1.4rem;
+  line-height: 2.5rem;
+}
+.flexx {
+  display: grid;
+  gap: 0.5rem;
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 56.75em) {
+  .flexx {
+    grid-template-columns: auto 1fr;
+    max-width: 90rem;
+    margin: 3rem 22px 0 15rem;
+    gap: 3.5rem;
+  }
+  h1,
+  .paragraph {
+    text-align: start;
+  }
+  h1 {
+    font-size: 4.1rem;
+  }
+  .bb {
+    width: 400px;
+  }
+}
+
+@media (min-width: 68.25em) {
+  .flexx {
+    margin: 3rem 22px 0 36rem;
+    gap: 4.5;
+  }
+}
